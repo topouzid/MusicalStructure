@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="category_play_music">Αναπαραγωγή</string>
+    <string name="category_buy_music">Αγορά</string>
+    <string name="music_player">Αναπαραγωγή Μουσικής</string>
+    <string name="music_shop">Αγορά Μουσικής</string>
+</resources>
