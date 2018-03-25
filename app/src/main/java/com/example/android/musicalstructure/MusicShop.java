@@ -18,25 +18,45 @@ public class MusicShop extends AppCompatActivity {
         Intent startupIntent = getIntent();
 
         //Songs from the shop are stored in an ArrayList
-        ArrayList<String> musicShop = new ArrayList<String>();
-        musicShop.add("New Song 1");
-        musicShop.add("New Song 2");
-        musicShop.add("New Song 3");
-        musicShop.add("New Song 4");
-        musicShop.add("New Song 5");
-        musicShop.add("New Song 6");
-        musicShop.add("New Song 7");
-        musicShop.add("New Song 8");
-        musicShop.add("New Song 9");
+//        ArrayList<String> musicShop = new ArrayList<String>();
+//        musicShop.add("New Song 1");
+//        musicShop.add("New Song 2");
+//        musicShop.add("New Song 3");
+//        musicShop.add("New Song 4");
+//        musicShop.add("New Song 5");
+//        musicShop.add("New Song 6");
+//        musicShop.add("New Song 7");
+//        musicShop.add("New Song 8");
+//        musicShop.add("New Song 9");
+
+        ArrayList<Song> newSongs = new ArrayList<Song>();
+        newSongs.add(new Song("High Hopes", "Pink Floyd", "Progressive Rock", 1994, 0.69, "Lyrics", R.drawable.pinkfloyd));
+        newSongs.add(new Song("The Promise", "Michael Nyman", "OST", 1993, 0.49, "Instrumental", R.drawable.nyman));
+        newSongs.add(new Song("Wake Me Up", "Avicii", "Electronic", 2013, 0.69, "Lyrics", R.drawable.avicii));
+        newSongs.add(new Song("Tribute", "Tenacious D", "Alternative", 2001, 0.49, "Lyrics", R.drawable.tenaciousd));
+        newSongs.add(new Song("Smells Like Teen Spirit", "Nirvana", "Alternative", 1991, 0.69, "Lyrics", R.drawable.nirvana));
+        newSongs.add(new Song("Sweet Child O\' Mine", "Guns \'N Roses", "Hard Rock", 1987, 0.69, "Lyrics", R.drawable.gunsnroses));
+        newSongs.add(new Song("Hotel California", "The Eagles", "Classic Rock", 1976, 0.49, "Lyrics", R.drawable.eagles));
+        newSongs.add(new Song("Earth Song", "Michael Jackson", "POP", 1982, 0, "Lyrics", R.drawable.jackson));
+        newSongs.add(new Song("Maria Maria", "Santana", "Latin Pop", 1999, 0.49, "Lyrics", R.drawable.santana));
+        newSongs.add(new Song("La Isla Bonita", "Madonna", "POP", 1986, 0.49, "Lyrics", R.drawable.madonna));
+        newSongs.add(new Song("Pray For Me", "The Weeknd, Kendrick Lamar", "POP", 2018, 0.99, "Lyrics", R.drawable.weeknd));
+        newSongs.add(new Song("Sickboy", "The Chainsmokers", "POP", 2018, 0.69, "Lyrics", R.drawable.chainsmokers));
+        newSongs.add(new Song("Jewel", "Cash Cash ft. Nikki Vianna", "Dance Electronic", 2018, 0.69, "Lyrics", R.drawable.cashcash));
+        newSongs.add(new Song("Euphoria", "Loreen", "Eurovision", 2012, 0.49, "Lyrics", R.drawable.loreen));
+
+        ShopAdapter newSongsAdapter = new ShopAdapter(this, newSongs);
+        ListView listView = (ListView) findViewById(R.id.music_shop_list);
+        listView.setAdapter(newSongsAdapter);
 
         /**
          * Create an ArrayAdapter to show a list to a ListView in XML
          * @type simple_list_item_1
          * @input songs ArrayList
          */
-        ArrayAdapter<String> newSongsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, musicShop);
-        ListView listView = (ListView) findViewById(R.id.music_shop_list);
-        listView.setAdapter(newSongsAdapter);
+//        ArrayAdapter<String> newSongsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, musicShop);
+//        ListView listView = (ListView) findViewById(R.id.music_shop_list);
+//        listView.setAdapter(newSongsAdapter);
 
     }
 }

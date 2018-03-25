@@ -39,8 +39,6 @@ public class MyMusic extends AppCompatActivity {
         songs.add(new Song("Way Down we Go", "Kaleo", "Blues Rock / Alternative", 2016, 0.69, "Lyrics", R.drawable.kaleo));
         songs.add(new Song("Wind of Change", "Scorpions", "Classic Rock", 1990, 0.49, "Lyrics", R.drawable.scorpions));
         songs.add(new Song("The Unforgiven", "Metallica", "Metal", 1991, 0.69, "Lyrics", R.drawable.metallica));
-        songs.add(new Song("Earth Song", "Michael Jackson", "POP", 1982, 0, "Lyrics", R.drawable.jackson));
-        songs.add(new Song("High Hopes", "Pink Floyd", "Progressive Rock", 1994, 0.69, "Lyrics", R.drawable.pinkfloyd));
 
         /**
          * Create an ArrayAdapter to display a list to a ListView in XML

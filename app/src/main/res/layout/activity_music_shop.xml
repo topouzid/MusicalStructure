@@ -7,15 +7,10 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicalstructure.MusicShop">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Music Shop"/>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/music_shop_list">
-
     </ListView>
 
 </LinearLayout>
