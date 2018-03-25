@@ -5,4 +5,6 @@
     <string name="category_buy_music">Αγορά</string>
     <string name="music_player">Αναπαραγωγή Μουσικής</string>
     <string name="music_shop">Αγορά Μουσικής</string>
+    <string name="separator">" - "</string>
+    <string name="lyrics_link">Στίχοι</string>
 </resources>

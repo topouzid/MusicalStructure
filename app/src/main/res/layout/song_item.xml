@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/song_artwork"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        tools:src="@drawable/metallica"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/horizontal_activity_spacing"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Song Title"
+            style="@style/songNameTextStyle"/>
+        <TextView
+            android:id="@+id/song_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Singer or Band"
+            style="@style/songAuthorTextStyle"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/horizontal_activity_spacing">
+            <TextView
+                android:id="@+id/song_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Genre"
+                style="@style/songExtraInfoStyle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/separator"
+                style="@style/songExtraInfoStyle"/>
+            <TextView
+                android:id="@+id/song_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="YEAR"
+                style="@style/songExtraInfoStyle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/separator"
+                style="@style/songExtraInfoStyle"/>
+            <TextView
+                android:id="@+id/lyrics_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Lyrics"
+                style="@style/songExtraInfoStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

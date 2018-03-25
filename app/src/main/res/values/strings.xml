@@ -4,4 +4,6 @@
     <string name="category_buy_music">Music Store</string>
     <string name="music_player">Music Player</string>
     <string name="music_shop">Music Shop</string>
+    <string name="separator">" - "</string>
+    <string name="lyrics_link">Lyrics</string>
 </resources>

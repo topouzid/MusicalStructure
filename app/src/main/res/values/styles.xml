@@ -16,4 +16,37 @@
         <item name="android:paddingLeft">@dimen/horizontal_activity_spacing</item>
         <item name="android:textSize">@dimen/category_font_size</item>
     </style>
+
+    <style name="categoryIconStyle">
+        <!-- Customize category icon styles on mainActivity -->
+        <item name="android:layout_width">@dimen/category_icon_width</item>
+        <item name="android:layout_height">@dimen/category_icon_height</item>
+        <item name="android:layout_marginLeft">@dimen/category_icon_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/category_icon_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/category_icon_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/category_icon_vertical_margin</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="songNameTextStyle">
+        <!-- Customize song list style -->
+        <item name="android:textSize">@dimen/song_title_text_size</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_activity_spacing</item>
+        <item name="android:layout_marginTop">@dimen/vertical_activity_margin</item>
+    </style>
+    <style name="songAuthorTextStyle">
+        <!-- Customize singer list style -->
+        <item name="android:textSize">@dimen/song_title_text_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_activity_spacing</item>
+    </style>
+    <style name="songExtraInfoStyle">
+        <!-- Customize more info on songs -->
+        <item name="android:textSize">@dimen/song_extra_text_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">@dimen/vertical_activity_margin</item>
+    </style>
 </resources>

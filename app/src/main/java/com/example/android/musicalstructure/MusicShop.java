@@ -31,10 +31,10 @@ public class MusicShop extends AppCompatActivity {
 
         /**
          * Create an ArrayAdapter to show a list to a ListView in XML
-         * @type activity_music_shop
+         * @type simple_list_item_1
          * @input songs ArrayList
          */
-        ArrayAdapter<String> newSongsAdapter = new ArrayAdapter<String>(this, R.layout.activity_music_shop, musicShop);
+        ArrayAdapter<String> newSongsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, musicShop);
         ListView listView = (ListView) findViewById(R.id.music_shop_list);
         listView.setAdapter(newSongsAdapter);
 
