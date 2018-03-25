@@ -7,4 +7,7 @@
     <string name="music_shop">Αγορά Μουσικής</string>
     <string name="separator">" - "</string>
     <string name="lyrics_link">Στίχοι</string>
+    <string name="now_playing">"Αναπαραγωγή: "</string>
+    <string name="pause">Παύση</string>
+    <string name="free">Δωρεάν</string>
 </resources>

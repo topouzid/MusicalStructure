@@ -38,28 +38,24 @@ public class SongAdapter extends ArrayAdapter<Song> {
          * set this text on the TextView
          */
         songTitleTextView.setText(currentSong.getSongTitle());
-
         /** Find the TextView in the song_item.xml layout with the ID song_author */
         TextView songAuthorTextView = (TextView) listItemView.findViewById(R.id.song_author);
         /** Get the singer or band name from the current Song object and
          * set this text on the TextView
          */
         songAuthorTextView.setText(currentSong.getSongAuthor());
-
         /** Find the TextView in the song_item.xml layout with the ID song_genre */
         TextView songGenreTextView = (TextView) listItemView.findViewById(R.id.song_genre);
         /** Get the song genre from the current Song object and
          * set this text on the TextView
          */
         songGenreTextView.setText(currentSong.getSongGenre());
-
         /** Find the TextView in the song_item.xml layout with the ID song_year */
         TextView songYearTextView = (TextView) listItemView.findViewById(R.id.song_year);
         /** Get the song year from the current Song object and
          * set this text on the TextView
          */
         songYearTextView.setText(String.valueOf(currentSong.getSongYear()));
-
         /** Find the ImageView in the song_item.xml layout with the ID song_artwork */
         ImageView songArtworkImageView = (ImageView) listItemView.findViewById(R.id.song_artwork);
         /** Get the song artwork id from the current Song object and

@@ -1,7 +1,5 @@
 package com.example.android.musicalstructure;
 
-import org.w3c.dom.Text;
-
 /**
  * Created by dimitriostopouzidis on 25/03/2018.
  * {@link Song} represents a song that a user wants to play or buy

@@ -6,4 +6,9 @@
     <string name="music_shop">Music Shop</string>
     <string name="separator">" - "</string>
     <string name="lyrics_link">Lyrics</string>
+    <string name="now_playing">"Now playing: "</string>
+    <string name="play" translatable="false">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop" translatable="false">Stop</string>
+    <string name="free">Free</string>
 </resources>

@@ -17,18 +17,7 @@ public class MusicShop extends AppCompatActivity {
 
         Intent startupIntent = getIntent();
 
-        //Songs from the shop are stored in an ArrayList
-//        ArrayList<String> musicShop = new ArrayList<String>();
-//        musicShop.add("New Song 1");
-//        musicShop.add("New Song 2");
-//        musicShop.add("New Song 3");
-//        musicShop.add("New Song 4");
-//        musicShop.add("New Song 5");
-//        musicShop.add("New Song 6");
-//        musicShop.add("New Song 7");
-//        musicShop.add("New Song 8");
-//        musicShop.add("New Song 9");
-
+        /** Songs from the shop are stored in an ArrayList */
         ArrayList<Song> newSongs = new ArrayList<Song>();
         newSongs.add(new Song("High Hopes", "Pink Floyd", "Progressive Rock", 1994, 0.69, "Lyrics", R.drawable.pinkfloyd));
         newSongs.add(new Song("The Promise", "Michael Nyman", "OST", 1993, 0.49, "Instrumental", R.drawable.nyman));
@@ -45,18 +34,12 @@ public class MusicShop extends AppCompatActivity {
         newSongs.add(new Song("Jewel", "Cash Cash ft. Nikki Vianna", "Dance Electronic", 2018, 0.69, "Lyrics", R.drawable.cashcash));
         newSongs.add(new Song("Euphoria", "Loreen", "Eurovision", 2012, 0.49, "Lyrics", R.drawable.loreen));
 
+        /**
+         * Create a ShopAdapter to display a list to a ListView in XML
+         * @input newSongs ArrayList
+         */
         ShopAdapter newSongsAdapter = new ShopAdapter(this, newSongs);
         ListView listView = (ListView) findViewById(R.id.music_shop_list);
         listView.setAdapter(newSongsAdapter);
-
-        /**
-         * Create an ArrayAdapter to show a list to a ListView in XML
-         * @type simple_list_item_1
-         * @input songs ArrayList
-         */
-//        ArrayAdapter<String> newSongsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, musicShop);
-//        ListView listView = (ListView) findViewById(R.id.music_shop_list);
-//        listView.setAdapter(newSongsAdapter);
-
     }
 }

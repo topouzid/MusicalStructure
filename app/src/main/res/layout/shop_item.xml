@@ -6,13 +6,13 @@
     android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/song_artwork"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="@dimen/artwork_size"
+        android:layout_height="@dimen/artwork_size"
         tools:src="@drawable/metallica"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="@dimen/horizontal_activity_spacing"/>
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
@@ -66,11 +66,9 @@
         </LinearLayout>
     </LinearLayout>
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/buy_icon_size"
+        android:layout_height="@dimen/buy_icon_size"
         android:src="@drawable/shop"
         android:layout_gravity="center"
         android:layout_marginRight="@dimen/horizontal_activity_spacing"/>
-
-
 </LinearLayout>
