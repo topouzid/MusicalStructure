@@ -1,8 +1,10 @@
 package com.example.android.musicalstructure;
 
 import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -34,5 +36,16 @@ public class MyMusic extends AppCompatActivity {
         SongAdapter songs_adapter = new SongAdapter(this, songs);
         ListView listView = (ListView) findViewById(R.id.songs_list);
         listView.setAdapter(songs_adapter);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

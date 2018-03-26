@@ -1,19 +1,22 @@
 package com.example.android.musicalstructure;
 
 import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class MusicShop extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_shop);
+//        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent startupIntent = getIntent();
 
@@ -41,5 +44,16 @@ public class MusicShop extends AppCompatActivity {
         ShopAdapter newSongsAdapter = new ShopAdapter(this, newSongs);
         ListView listView = (ListView) findViewById(R.id.music_shop_list);
         listView.setAdapter(newSongsAdapter);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

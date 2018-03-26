@@ -17,10 +17,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".MyMusic"
-            android:label="@string/music_player">
+            android:label="@string/music_player"
+            android:parentActivityName="com.example.android.musicalstructure.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalstructure.MainActivity" />
         </activity>
         <activity android:name=".MusicShop"
-            android:label="@string/music_shop">
+            android:label="@string/music_shop"
+            android:parentActivityName="com.example.android.musicalstructure.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalstructure.MainActivity" />
         </activity>
     </application>
 
