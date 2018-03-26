@@ -16,8 +16,6 @@ public class MusicShop extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_shop);
-//        getActionBar().setDisplayHomeAsUpEnabled(true);
-
         Intent startupIntent = getIntent();
 
         /** Songs from the shop are stored in an ArrayList */

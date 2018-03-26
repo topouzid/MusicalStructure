@@ -6,36 +6,38 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         //Find the view that shows my_music category
         TextView playMusic = (TextView) findViewById(R.id.my_music);
         // Set a click listener on that View
-        playMusic.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the my_music View is clicked on.
-            @Override
-            public void onClick(View v) {
-                Intent myMusicIntent = new Intent(MainActivity.this, MyMusic.class);
-                startActivity(myMusicIntent);
-            }
-        });
+        playMusic.setOnClickListener(this);
 
         //Find the view that shows music store category
         TextView buyMusic = (TextView) findViewById(R.id.store);
         // Set a click listener on that View
-        buyMusic.setOnClickListener(new View.OnClickListener() {
+        buyMusic.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View V) {
+        int id = V.getId();
+        switch (id) {
             // The code in this method will be executed when the store View is clicked on.
-            @Override
-            public void onClick(View v) {
+            case R.id.store:
                 Intent buyMusicIntent = new Intent(MainActivity.this, MusicShop.class);
                 startActivity(buyMusicIntent);
-            }
-        });
+                break;
+            // The code in this method will be executed when the my_music View is clicked on.
+            case R.id.my_music:
+                Intent myMusicIntent = new Intent(MainActivity.this, MyMusic.class);
+                startActivity(myMusicIntent);
+                break;
+        }
     }
 }

@@ -18,9 +18,9 @@ public class MyMusic extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_music);
-
         Intent startupIntent = getIntent();
 
+        /** Songs from my playlist are stored in an ArrayList */
         ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Havana (Audio) ft. Young Thug", "Camila Cabello", "POP", 2018, 0.99, "Hey nanana lyrics", R.drawable.havana));
         songs.add(new Song("Never be the Same", "Camila Cabello", "POP", 2018, 0.99, "Lyrics", R.drawable.camila));
