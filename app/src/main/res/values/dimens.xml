@@ -13,4 +13,6 @@
     <dimen name="song_extra_text_size">12sp</dimen>
     <dimen name="artwork_size">65dp</dimen>
     <dimen name="buy_icon_size">30dp</dimen>
+    <dimen name="vertical_activity_margin_ldpi">6dp</dimen>
+    <dimen name="media_button_width">90dp</dimen>
 </resources>
